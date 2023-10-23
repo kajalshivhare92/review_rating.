@@ -20,7 +20,7 @@ const companyReviewSchema = mongoose.Schema({
   },
   companyID: {
     type: mongoose.Types.ObjectId,
-    ref :"company",
+    ref: "company",
     required: true,
   },
   isActive: {
@@ -29,4 +29,5 @@ const companyReviewSchema = mongoose.Schema({
   }
 });
 companyReviewSchema.set("timestamps", true);
-module.exports = mongoose.model("company", companyReviewSchema);
+
+module.exports = mongoose.model("review", companyReviewSchema);

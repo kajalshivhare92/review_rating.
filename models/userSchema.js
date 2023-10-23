@@ -29,15 +29,15 @@ const userSchema = mongoose.Schema({
     type: String,
     default: "user",
   },
-  // profilePic: {
-  //   type: String,
-    
-  // },
-    isActive: {
-      type: String,
-      default: true,
-    }
-  });
-  userSchema.set("timestamps",true);
+  profilePic: {
+    type: String,
+
+  },
+  isActive: {
+    type: String,
+    default: true,
+  }
+});
+userSchema.set("timestamps", true);
 
 module.exports = mongoose.model("user", userSchema);
